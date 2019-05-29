@@ -4,10 +4,20 @@ class UsersController < ApplicationController
   # GET /users
   def index
     @users = User.all
+    @banner = <<-'EOS'
+＿人人人人人人人人人人＿<br/>
+＞　かっこいいバナー　＜<br/>
+￣Y^Y^Y^Y^Y^Y^Y^Y￣
+    EOS
   end
 
   # GET /users/1
   def show
+    @banner = <<-'EOS'
+＿人人人人人人人人人人＿<br/>
+＞　かっこいいバナー　＜<br/>
+￣Y^Y^Y^Y^Y^Y^Y^Y￣
+    EOS
   end
 
   # GET /users/new
